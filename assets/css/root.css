@@ -1,0 +1,83 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Base Colors */
+    --light-color: #ffffff;
+    --light-color-75: #ffffffbf;
+    --light-color-50: #ffffff80;
+    --light-color-25: #ffffff40;
+    --light-color-10: #ffffff1a;
+    --light-color-5: #ffffff0d;
+
+    --primary-color: #652EDA;
+    --primary-color-75: #8B62E3;
+    --primary-color-50: #B296ED;
+    --primary-color-25: #D8CBF6;
+    --primary-color-10: #F0EAFB;
+    --primary-color-5: #F7F5FD;
+    
+
+    --success-color: #C9FF85;
+    --info-color: #7ce1ff;
+
+    --black-color: #120A0B;
+    --black-color-75: #4E4848;
+    --black-color-50: #888485;
+    --black-color-25: #C4C2C2;
+    --black-color-10: #E7E6E6;
+    --black-color-5: #F3F3F3;
+
+    /* Gradients */
+    --primary-gradient: linear-gradient(45deg, var(--primary-color) 35%, var(--primary-color-75) 100%);
+
+    /* Typography */
+    --font-family-base: 'Inter', sans-serif, Arial, sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-black: 900;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    --spacing-xxl: 32px;
+
+    /* Border Radius */
+    --round-xs: 4px;
+    --round-sm: 8px;
+    --round-md: 12px;
+    --round-lg: 16px;
+    --round-xl: 24px;
+    --round-xxl: 32px;
+
+    /* Box Shadows */
+    --box-shadow-xs: 0 2px 4px var(--black-color-5);
+    --box-shadow-sm: 0 4px 8px var(--black-color-5);
+    --box-shadow-md: 0 8px 16px var(--black-color-5);
+    --box-shadow-lg: 0 16px 32px var(--black-color-10);
+    --box-shadow-xl: 0 24px 48px var(--black-color-10);
+    --box-shadow-xxl: 0 32px 64px var(--black-color-10);
+
+    /* Z-Index */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal: 1040;
+    --z-index-tooltip: 1050;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+
+    --navbar-height: 80px;
+}

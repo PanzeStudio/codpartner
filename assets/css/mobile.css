@@ -1,0 +1,104 @@
+@media only screen and (min-width: 1201px) {
+    nav.nav__menu .nav__list li ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: var(--light-color);
+        min-width: 240px;
+        opacity: 0;
+        /* Ensures that the dropdown is hidden initially */
+        visibility: hidden;
+        transition: opacity var(--transition-normal);
+        /* Smooth transition for dropdown */
+        box-shadow: 0 0 0 1px var(--primary-color-5) inset;
+        border-radius: var(--round-lg);
+        padding: var(--spacing-lg) 0;
+    }
+
+    nav.nav__menu .nav__list li li {
+        padding: 0px var(--spacing-lg);
+    }
+
+    nav.nav__menu .nav__list li li ul {
+        left: 100%;
+        top: calc(0px - var(--spacing-lg));
+    }
+
+    nav.nav__menu .nav__list li li a {
+        padding: var(--spacing-xs) var(--spacing-xs);
+    }
+
+    nav.nav__menu .nav__list li li a {
+        width: calc(100% - 30px);
+    }
+
+    nav.nav__menu .nav__list li li .arrow {
+        text-align: right;
+        width: 30px;
+        margin: 0;
+    }
+
+    nav.nav__menu .nav__list>li>ul:before {
+        content: "";
+        position: absolute;
+        left: 18%;
+        bottom: 100%;
+        border-bottom: 10px solid var(--light-color);
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+    }
+
+    nav.nav__menu .nav__list li:hover>ul {
+        opacity: 1;
+        /* Show dropdown on hover */
+        visibility: visible;
+    }
+
+    nav.nav__menu .nav__list li:hover>.arrow i:before {
+        content: "\f068";
+    }
+
+    nav.nav__menu .nav__list li ul.mega__menu li {
+        width: 33.33%;
+        padding: var(--spacing-md);
+    }
+
+    nav.nav__menu .nav__list li.mega__item {
+        position: static;
+    }
+
+    nav.nav__menu .nav__list li ul.mega__menu {
+        left: 0;
+        top: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: var(--spacing-lg);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar__area .nav__menu {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .navbar__area .nav__menu .nav__list {
+        background-color: var(--light-color);
+        border-radius: var(--round-lg);
+        box-shadow: var(--shadow-line);
+        flex-wrap: wrap;
+    }
+
+    nav.nav__menu .nav__list>li>a {
+        color: var(--black-color);
+    }
+
+    .navbar__area .nav__menu .nav__list li {
+        width: 100%;
+    }
+}
