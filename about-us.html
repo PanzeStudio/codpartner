@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <!-- Metadata and basic document setup -->
@@ -13,7 +13,10 @@
 
     <!-- CSS files -->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/rtl.css">
 </head>
 
 <body>
@@ -28,7 +31,7 @@
 
                         <!-- Logo column -->
                         <div class="col-6 col-xl-3">
-                            <a href="/" class="nav__logo">
+                            <a href="index.html" class="nav__logo">
                                 <img src="./assets/images/logo-dark.png" alt="Floxse">
                             </a>
                         </div>
@@ -45,10 +48,10 @@
                         <!-- Navigation menu column -->
                         <nav class="col-12 col-xl-6 nav__menu">
                             <ul class="nav__list"> <!-- Navigation links -->
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/">About</a></li>
-                                <li class="mega__item"><a href="/">Services</a>
-                                    <span class="arrow"><i class="fa-regular fa-plus"></i></span>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About</a></li>
+                                <li class="mega__item"><a href="#">Services <span class="arrow"><i class="fa-regular fa-angle-down"></i></span></a>
+                                    <button class="toggle"><i class="fa-regular fa-plus"></i></button>
                                     <ul class="mega__menu">
                                         <li>
                                             <a href="./product-sourcing.html">
@@ -154,7 +157,7 @@
                 </div>
                 <div class="mb-5"></div>
 
-                <div class="row g-0 text-center">
+                <div class="row g-4 row-cols-2 row-cols-md-4 text-center">
                     <div class="col">
                         <h3 class="mb-2 primary__color"><span class="counter" data-count="30">30</span>k+</h3>
                         <div>Satisfied Clients</div>
@@ -225,11 +228,43 @@
             </div>
         </section>
 
-        <div class="container">
-            <figure class="single__image">
-                <img src="./assets/images/map.jpg" alt="">
-            </figure>
-        </div>
+        <section class="py-5">
+            <div class="container-fluid">
+                <figure class="single__image map_pointers">
+                    <img src="./assets/images/map-bg.jpg" alt="">
+                    <div class="pointer one">
+                        <div class="tip">
+                            <span class="flag fi-eg"></span>
+                            <span class="name">Egypt</span>
+                        </div>
+                    </div>
+                    <div class="pointer two">
+                        <div class="tip">
+                            <span class="flag fi-sd"></span>
+                            <span class="name">Sudan</span>
+                        </div>
+                    </div>
+                    <div class="pointer three">
+                        <div class="tip">
+                            <span class="flag fi-ly"></span>
+                            <span class="name">Libya</span>
+                        </div>
+                    </div>
+                    <div class="pointer four">
+                        <div class="tip">
+                            <span class="flag fi-sa"></span>
+                            <span class="name">Saudi Arabia</span>
+                        </div>
+                    </div>
+                    <div class="pointer five">
+                        <div class="tip">
+                            <span class="flag fi-jo"></span>
+                            <span class="name">Jordan</span>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
 
         <section class="faq__section section__padding_bottom">
             <div class="container">
@@ -244,7 +279,7 @@
 
                 <div class="row g-5">
                     <div class="col-lg-5">
-                        <div class="gray__round__box">
+                        <div class="gray__round__box flex-center">
                             <h4 class="mb-3">Didn't get<br>your answer yet?</h4>
                             <div class="description mb-4 pb-2">We haven't received your response yet. Please let us know
                                 if you need any further assistance.</div>
@@ -299,10 +334,9 @@
         </section>
 
 
-
         <footer class="footer__area">
             <div class="container">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-lg-3">
                         <figure class="footer__logo mb-4">
                             <img src="./assets/images/logo-white.png" alt="">
@@ -345,7 +379,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-4 col-sm-4 col-lg-2">
                         <div class="footer__widget">
                             <h6 class="title">Quick link</h6>
                             <ul class="nav__links">
@@ -358,7 +392,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-4 col-sm-4 col-lg-2">
                         <div class="footer__widget">
                             <h6 class="title">Resources</h6>
                             <ul class="nav__links">
@@ -368,7 +402,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-4 col-sm-4 col-lg-2">
                         <div class="footer__widget">
                             <h6 class="title">Conditions</h6>
                             <ul class="nav__links">
@@ -377,7 +411,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="footer__widget">
                             <h6 class="title">Support</h6>
                             <ul class="icon__list">
@@ -462,9 +496,10 @@
     </div>
 
 
-    <script src=" ./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/jquery.waypoints.min.js"></script> 
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
     <script src="./assets/js/masonary.js"></script>
     <script src="./assets/js/swiper-bundle-min.js"></script>
     <script src="./assets/js/active.js"></script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <!-- Metadata and basic document setup -->
@@ -13,7 +13,9 @@
 
     <!-- CSS files -->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/rtl.css">
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
                         <!-- Logo column -->
                         <div class="col-6 col-xl-3">
-                            <a href="/" class="nav__logo">
+                            <a href="index.html" class="nav__logo">
                                 <img src="./assets/images/logo-dark.png" alt="Floxse">
                             </a>
                         </div>
@@ -45,10 +47,10 @@
                         <!-- Navigation menu column -->
                         <nav class="col-12 col-xl-6 nav__menu">
                             <ul class="nav__list"> <!-- Navigation links -->
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/">About</a></li>
-                                <li class="mega__item"><a href="/">Services</a>
-                                    <span class="arrow"><i class="fa-regular fa-plus"></i></span>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About</a></li>
+                                <li class="mega__item"><a href="#">Services <span class="arrow"><i class="fa-regular fa-angle-down"></i></span></a>
+                                    <button class="toggle"><i class="fa-regular fa-plus"></i></button>
                                     <ul class="mega__menu">
                                         <li>
                                             <a href="./product-sourcing.html">
@@ -185,7 +187,7 @@
 
         <section class="section__padding service_bg_tow">
             <div class="container-fluid">
-                <div class="row g-4 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="row g-4 g-xl-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
                     <div class="col">
                         <div class="cirlce__icon_one mb-4"><img src="./assets/images/service-icon-16.svg" alt=""></div>
                         <h6 class="mb-2 fw-medium">Order Received</h6>
@@ -230,7 +232,7 @@
 
                 <div class="row g-5">
                     <div class="col-lg-5">
-                        <div class="gray__round__box">
+                        <div class="gray__round__box flex-center">
                             <h4 class="mb-3">Didn't get<br>your answer yet?</h4>
                             <div class="description mb-4 pb-2">We haven't received your response yet. Please let us know
                                 if you need any further assistance.</div>
@@ -288,7 +290,7 @@
 
         <footer class="footer__area">
             <div class="container">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-lg-3">
                         <figure class="footer__logo mb-4">
                             <img src="./assets/images/logo-white.png" alt="">
@@ -331,7 +333,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-4 col-sm-4 col-lg-2">
                         <div class="footer__widget">
                             <h6 class="title">Quick link</h6>
                             <ul class="nav__links">
@@ -344,7 +346,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-4 col-sm-4 col-lg-2">
                         <div class="footer__widget">
                             <h6 class="title">Resources</h6>
                             <ul class="nav__links">
@@ -354,7 +356,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-4 col-sm-4 col-lg-2">
                         <div class="footer__widget">
                             <h6 class="title">Conditions</h6>
                             <ul class="nav__links">
@@ -363,7 +365,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-12 col-lg-3">
                         <div class="footer__widget">
                             <h6 class="title">Support</h6>
                             <ul class="icon__list">
@@ -448,9 +450,10 @@
     </div>
 
 
-    <script src=" ./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/jquery.waypoints.min.js"></script> 
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
     <script src="./assets/js/masonary.js"></script>
     <script src="./assets/js/swiper-bundle-min.js"></script>
     <script src="./assets/js/active.js"></script>

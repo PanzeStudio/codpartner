@@ -9,8 +9,8 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-size: 16px;
-    line-height: 1.6em;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
     font-family: var(--font-family-base);
     scroll-behavior: smooth;
     background-color: var(--light-color);
@@ -54,7 +54,7 @@ pre {
 }
 
 h1 {
-    font-size: clamp(3.5rem, 5vw, 4.5rem);
+    font-size: clamp(3rem, 5vw, 4.5rem);
     /* Minimum 3rem, scales with viewport width, max 4rem */
     line-height: 1.1;
     /* 120% of the font size */
@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     /* Minimum 2.5rem, scales with viewport width, max 3.5rem */
     line-height: 1.2;
     /* 130% of the font size */
@@ -71,19 +71,19 @@ h2 {
 h3 {
     font-size: clamp(2rem, 3.5vw, 2.5rem);
     /* Minimum 2rem, scales with viewport width, max 2.5rem */
-    line-height: 1.3;
+    line-height: 1.2;
     /* 140% of the font size */
 }
 
 h4 {
-    font-size: clamp(1.75rem, 3vw, 2rem);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
     /* Minimum 1.75rem, scales with viewport width, max 2rem */
-    line-height: 1.4;
+    line-height: 1.3;
     /* 150% of the font size */
 }
 
 h5 {
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     /* Minimum 1.25rem, scales with viewport width, max 1.75rem */
     line-height: 1.5;
     /* 160% of the font size */
@@ -281,12 +281,17 @@ hr {
     margin-bottom: var(--spacing-xl);
 }
 
+.gray2__round__box,
 .gray__round__box {
     background-color: #FCFBFE;
     padding: var(--spacing-xxl);
     border-radius: var(--round-lg);
     border: 1px solid var(--black-color-10);
     height: 100%;
+}
+
+.gray2__round__box {
+    background-color: #F3F3F5;
 }
 
 .flex-center {
@@ -361,4 +366,16 @@ hr {
 
 .dot__line.done::before {
     background-color: var(--primary-color);
+}
+
+.aff__program_box {
+    background-color: #F3F3F5;
+    border-radius: var(--round-lg);
+}
+
+.aff__program_box .program__image {
+    height: 220px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

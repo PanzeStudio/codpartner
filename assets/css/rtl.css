@@ -1,0 +1,130 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+.container {
+    direction: rtl;
+}
+
+.text-end {
+    text-align: left !important;
+}
+
+.text-start {
+    text-align: right !important;
+}
+
+.single__work__item {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.single__work__item .dot {
+    left: auto;
+    right: 0px;
+}
+
+.icon__list li {
+    padding-left: 0px;
+    padding-right: 35px;
+}
+
+.icon__list li .icon {
+    left: auto;
+    right: 0px;
+}
+
+.testimonial__items .testimonial__item .header {
+    padding-left: 0px;
+    padding-right: 60px;
+}
+
+.testimonial__items .testimonial__item .thumb {
+    left: auto;
+    right: 0px;
+}
+
+.ms-2 {
+    margin-left: 0px;
+    margin-right: 0.5rem !important;
+}
+
+nav.nav__menu .nav__list li ul.mega__menu li a .icon {
+    margin-right: 0px;
+    margin-left: var(--spacing-lg);
+}
+
+.map_pointers .pointer .tip {
+    left: auto;
+    right: 15px;
+    padding: 6px 6px 6px 16px;
+}
+
+.map_pointers .pointer .tip .flag {
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+.funding__box {
+    padding: 12px 12px 12px 24px;
+}
+
+.funding__box .icon {
+    margin-right: 0px;
+    margin-left: var(--spacing-lg);
+}
+
+.checkbox .check {
+    margin-right: 0px;
+    margin-left: var(--spacing-sm);
+}
+
+.float__right {
+    float: left;
+}
+
+.ms-3 {
+    margin-left: 0px !important;
+    margin-right: 1rem !important;
+}
+
+@media only screen and (min-width: 1201px) {
+    nav.nav__menu .nav__list li a .arrow {
+        margin-left: 0px;
+        margin-right: var(--spacing-xs);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar__area .nav__menu .nav__list li .toggle {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .nav__menu .nav__list>li ul {
+        padding-left: 0px;
+        padding-right: var(--spacing-lg);
+    }
+}
+
+@media (min-width: 992px) {
+    .offset-lg-1 {
+        margin-left: 0px;
+        margin-right: 8.33333333%;
+    }
+    .p-lg-5.pe-lg-0 {
+        padding-right: 3rem !important;
+        padding-left: 0px !important;
+    }
+    .p-lg-5.ps-lg-0 {
+        padding-left: 3rem !important;
+        padding-right: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer__area .social__links {
+        float: left;
+    }
+}

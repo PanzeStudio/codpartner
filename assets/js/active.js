@@ -1,23 +1,47 @@
 ;(function($) {
     $(document).ready(function() {
 
-        
-        // Select the grid container
-        var grid = document.querySelector('.masonry__items');
-        var masonry; // Declare masonry globally
-
-        // Initialize Masonry
-        masonry = new Masonry(grid, {
-            itemSelector: '.masonry__items .masonry__item',
-            columnWidth: '.masonry__items .masonry__item',
-            percentPosition: false,
+        // Initialize AOS
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+            once: true,     // Animation should happen only once
         });
+
+        $(document).ready(function(){
+            $('.navbar__area .nav__menu  li > .toggle').on('click', function(){
+                $(this).siblings('ul').slideToggle(); // Toggle submenu
+                $(this).find('i').toggleClass('fa-plus fa-minus'); // Toggle icon
+            });
+        });
+        
+
+        $('.toggle__button').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav__menu').slideToggle();
+        
+            // Toggle icon class
+            $(this).find('i').toggleClass('fa-bars-staggered fa-times');
+        });
+        
+
+        
+        
+        var $grid = $('.masonry__items');
+
+        if ($grid.length) {
+            // Initialize Masonry
+            $grid.masonry({
+                itemSelector: '.masonry__items .masonry__item',
+                columnWidth: '.masonry__items .masonry__item',
+                percentPosition: false
+            });
+        }
 
         // "Load More" Button Functionality
         $('#load_more_testimonial_1').on('click', function() {
             // Show the next 3 hidden items
             $('#testimonial_1 .masonry__item:hidden').slice(0, 3).fadeIn(function() {
-                masonry.layout(); // Re-layout Masonry after revealing items
+                $grid.masonry('layout'); // Re-layout Masonry after revealing items
             });
 
             // Hide the button if no more hidden items exist
@@ -84,6 +108,31 @@ var swiper = new Swiper(".partners__slider", {
 
 
 var swiper = new Swiper(".client__slider", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    loop: true, // Enable infinite loop
+    autoplay: {
+        delay: 0, // Continuous sliding
+        disableOnInteraction: false, // Continue autoplay after user interaction
+    },
+    speed: 4000, // Slide speed in milliseconds
+    simulateTouch: false, // Disable touch interaction
+    allowTouchMove: false, // Disable slide dragging
+    draggable: false, // Disable dragging on desktop
+    breakpoints: {
+        640: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+    },
+});
+
+var swiper = new Swiper(".trusted__slider", {
     slidesPerView: 3,
     spaceBetween: 0,
     loop: true, // Enable infinite loop
