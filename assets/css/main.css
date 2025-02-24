@@ -885,7 +885,7 @@ nav.nav__menu .nav__list li ul.mega__menu li:hover>a>.icon {
 }
 
 .aff_step_image {
-    height: 140px;
+    height: 160px;
     width: 100%;
     margin-bottom: var(--spacing-xl);
     background-position: center center;
@@ -917,15 +917,6 @@ nav.nav__menu .nav__list li ul.mega__menu li:hover>a>.icon {
     border-radius: 40vw;
     background-color: var(--primary-color);
     filter: blur(700px);
-}
-
-.capital__bg {
-    max-width: 1500px;
-    margin: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: var(--round-lg);
 }
 
 .trusted__slider .swiper-wrapper {
@@ -985,4 +976,52 @@ nav.nav__menu .nav__list li ul.mega__menu li:hover>a>.icon {
     background-size: auto;
     background-repeat: repeat;
     padding: 80px 0px;
+}
+
+.capital_header_image {
+    width: 800px;
+    float: left;
+}
+
+.capital_header_image img {
+    width: 100%;
+}
+
+.check__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6px -12px;
+    max-width: 600px;
+}
+
+.check__list li::before {
+    content: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.08203 10.0007C2.08203 6.26898 2.08203 4.40232 3.2412 3.24315C4.40036 2.08398 6.2662 2.08398 9.9987 2.08398C13.7304 2.08398 15.597 2.08398 16.7562 3.24315C17.9154 4.40232 17.9154 6.26815 17.9154 10.0007C17.9154 13.7323 17.9154 15.599 16.7562 16.7582C15.597 17.9173 13.7312 17.9173 9.9987 17.9173C6.26703 17.9173 4.40036 17.9173 3.2412 16.7582C2.08203 15.599 2.08203 13.7332 2.08203 10.0007Z' stroke='black' stroke-width='1.5'/%3E%3Cpath d='M6.66797 11.4583C6.66797 11.4583 8.0013 12.2183 8.66797 13.3333C8.66797 13.3333 10.668 8.95833 13.3346 7.5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    line-height: 1em;
+    margin-right: 8px;
+}
+
+.check__list li {
+    display: inline-flex;
+    align-items: center;
+    margin: 6px 12px;
+}
+
+.search__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search__form .form__input {
+    border: 1px solid #ededed;
+    border-radius: var(--round-sm);
+    padding: 6px 24px;
+    font-size: 18px;
+    font-weight: 300;
+    width: calc(100% - 148px);
+    height: 65px;
+    margin-right: 12px;
+}
+
+.search__form .button {
+    max-width: 135px;
 }

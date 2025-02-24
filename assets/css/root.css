@@ -53,9 +53,9 @@
 
     /* Border Radius */
     --round-xs: 4px;
-    --round-sm: 8px;
-    --round-md: 12px;
-    --round-lg: 16px;
+    --round-sm: 12px;
+    --round-md: 16px;
+    --round-lg: 20px;
     --round-xl: 24px;
     --round-xxl: 32px;
 

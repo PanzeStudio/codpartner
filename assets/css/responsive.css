@@ -46,6 +46,10 @@
         font-size: clamp(1.5rem, 3vw, 3.5rem);
         line-height: 1.3em;
     }
+
+    .capital_header_image {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 992px) {

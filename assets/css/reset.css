@@ -90,7 +90,7 @@ h5 {
 }
 
 h6 {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 20px);
     /* Minimum 1rem, scales with viewport width, max 1.5rem */
     line-height: 1.6;
     /* 160% of the font size */
@@ -216,6 +216,10 @@ hr {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+}
+
+.big {
+    color: var(--black-color);
 }
 /* ============================================= */
 /*               Background Color                */
